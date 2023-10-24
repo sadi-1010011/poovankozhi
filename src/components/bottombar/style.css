@@ -1,0 +1,26 @@
+/* BOTTOMBAR */
+
+.bottombar {
+    display: flex;
+    width: 40vw;
+    margin: 1rem auto;
+    padding: .8rem 1rem;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bottombar-icons {
+    width: 2.66rem;
+    height: auto;
+    transition: 0.24s;
+}
+
+.bottombar-icons:active {
+    transform: scale(1.32);
+}
+
+@media screen and (max-width: 768px) {
+    .bottombar { margin-bottom: 2.4rem; }
+}

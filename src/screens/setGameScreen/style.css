@@ -1,0 +1,16 @@
+/* SETGAME SCREEN */
+
+.screen-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setgame-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 4rem auto 1rem auto;
+}

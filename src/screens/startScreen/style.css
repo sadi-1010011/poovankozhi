@@ -1,0 +1,72 @@
+/* STARTSCREEN */
+
+.startscreen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.game-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.game-title {
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+
+.game-image {
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: auto;
+}
+
+.game-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.game-options > button {
+    width: 30%;
+    margin: 1rem auto;
+    padding: .8rem 1rem;
+    background-color: #59594A;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .31s;
+}
+
+.game-options > button:active {
+    background-color: brown;
+    color: aquamarine;
+}
+
+.to-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .game-options > button {
+        width: 70%;
+        padding: .56rem 1rem;
+        font-weight: 500;
+    }
+
+    .game-image {
+        width: 50%;
+        height: auto;
+    }
+}

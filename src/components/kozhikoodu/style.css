@@ -31,11 +31,11 @@
 }
 
 .kozhikoodu > div:hover {
-    background-color: #BE6E46;
+    background-color: grey;
 }
 
 .kozhikoodu > div:active {
-    background-color: brown;
+    background-color: lightslategray;
     border-radius: 4px;
     transform: scale(0.935)
 }

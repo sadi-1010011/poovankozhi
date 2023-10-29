@@ -9,6 +9,7 @@ import SettingsScreen from './screens/settingsScreen/SettingsScreen';
 import GameScreen from './screens/gameScreen/GameScreen';
 import NoPage from './screens/noPage/NoPage';
 import SetGameScreen from './screens/setGameScreen/SetGameScreen';
+import SuccessScreen from './screens/successScreen/SuccessScreen';
 
 // ROUTEs
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "setgamescreen",
     element: <SetGameScreen />,
+  },
+  {
+    path: "successscreen",
+    element: <SuccessScreen />,
   },
 
 ]);

@@ -1,16 +1,19 @@
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Kozhikoodu from '../../components/kozhikoodu/Kozhikoodu';
 import TitleBar from '../../components/titlebar/TitleBar';
+import LoadingScreen from '../loadingScreen/LoadingScreen';
 import kooduData from '../../data/kooduData';
 import './style.css';
 
 export default function GameScreen() {
     
     const { state } = useLocation();
+    const navigate = useNavigate();
     const correctKoodu = state;
 
     kooduData.forEach(function(item) {
+        item.clickedcorrect = false;
         if (item.value === correctKoodu) {
             item.iskozhi = false;
             item.selectedkoodu = false;
@@ -34,7 +37,7 @@ export default function GameScreen() {
             console.log('correct Koodu !')
             // CORRECT -----------
 
-            alert('correct koodu');
+            // alert('correct koodu');
             let newObj = [...localkooduData];
             newObj.forEach(function(item){
                 if (item.value == clickedKoodu) {
@@ -42,6 +45,7 @@ export default function GameScreen() {
                 }
             });
             setLocalkooduData(newObj);
+            navigate('/successscreen');
         }
         else {
             console.log('Incorrect Koodu !')
@@ -62,9 +66,10 @@ export default function GameScreen() {
     }
 
     return (
-        <div className="screen-container-gamescreen">
-            <TitleBar choices={choices} level={level} />
-            <Kozhikoodu kooduData={localkooduData} checkkoodu={checkkoodu}  />
-        </div>
+        <LoadingScreen/>
+        // <div className="screen-container-gamescreen">
+        //     <TitleBar choices={choices} level={level} />
+        //     <Kozhikoodu kooduData={localkooduData} checkkoodu={checkkoodu}  />
+        // </div>
     );
 }

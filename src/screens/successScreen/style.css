@@ -1,0 +1,46 @@
+/* SUCCESS SCREEN */
+
+.winnnerscreen-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.winner-game-title {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    word-spacing: 1rem;
+    margin: 1rem auto;
+}
+
+.winner-game-image {
+    display: block;
+    margin: 2rem auto;
+    width: 50%;
+    height: auto;
+    animation: winnerchicken 2s linear infinite;
+}
+
+.winnergame-homebtn {
+    display: block;
+    margin: 8px auto;
+    padding: 4px 8px;
+}
+
+@keyframes winnerchicken {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.15);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    75% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

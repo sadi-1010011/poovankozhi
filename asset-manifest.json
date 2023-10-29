@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/poovankozhi/static/css/main.37959ae5.css",
-    "main.js": "/poovankozhi/static/js/main.f2b28556.js",
+    "main.css": "/poovankozhi/static/css/main.4ffc38bd.css",
+    "main.js": "/poovankozhi/static/js/main.4d299e92.js",
     "static/media/poovankozhi.png": "/poovankozhi/static/media/poovankozhi.39d9cae2071a61aa1402.png",
     "static/media/incorrect.png": "/poovankozhi/static/media/incorrect.897ead2fb790da050dec.png",
     "static/media/correct.png": "/poovankozhi/static/media/correct.075da097d10e6fed78e6.png",
     "index.html": "/poovankozhi/index.html",
-    "main.37959ae5.css.map": "/poovankozhi/static/css/main.37959ae5.css.map",
-    "main.f2b28556.js.map": "/poovankozhi/static/js/main.f2b28556.js.map"
+    "main.4ffc38bd.css.map": "/poovankozhi/static/css/main.4ffc38bd.css.map",
+    "main.4d299e92.js.map": "/poovankozhi/static/js/main.4d299e92.js.map"
   },
   "entrypoints": [
-    "static/css/main.37959ae5.css",
-    "static/js/main.f2b28556.js"
+    "static/css/main.4ffc38bd.css",
+    "static/js/main.4d299e92.js"
   ]
 }

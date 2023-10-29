@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Kozhikoodu from '../../components/kozhikoodu/Kozhikoodu';
 import TitleBar from '../../components/titlebar/TitleBar';
-import LoadingScreen from '../loadingScreen/LoadingScreen';
+// import LoadingScreen from '../loadingScreen/LoadingScreen';
 import kooduData from '../../data/kooduData';
 import './style.css';
 
@@ -66,10 +66,10 @@ export default function GameScreen() {
     }
 
     return (
-        <LoadingScreen/>
-        // <div className="screen-container-gamescreen">
-        //     <TitleBar choices={choices} level={level} />
-        //     <Kozhikoodu kooduData={localkooduData} checkkoodu={checkkoodu}  />
-        // </div>
+        // <LoadingScreen/>
+        <div className="screen-container-gamescreen">
+            <TitleBar choices={choices} level={level} />
+            <Kozhikoodu kooduData={localkooduData} checkkoodu={checkkoodu}  />
+        </div>
     );
 }

@@ -14,7 +14,7 @@ import SuccessScreen from './screens/successScreen/SuccessScreen';
 // ROUTEs
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/poovankozhi",
     element: <App />,
     errorElement: <NoPage />
   },

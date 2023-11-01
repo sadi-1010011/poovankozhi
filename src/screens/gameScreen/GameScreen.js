@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import Kozhikoodu from '../../components/kozhikoodu/Kozhikoodu';
 import TitleBar from '../../components/titlebar/TitleBar';
 // import LoadingScreen from '../loadingScreen/LoadingScreen';
+import chickencry2s from '../../audios/chickencry2s.mp3';
 import kooduData from '../../data/kooduData';
 import './style.css';
 
@@ -33,14 +34,14 @@ export default function GameScreen() {
             alert('0 choices left!');
             return false;
         }
-        if (clickedKoodu == correctKoodu) {
+        if (clickedKoodu === correctKoodu) {
             console.log('correct Koodu !')
             // CORRECT -----------
 
             // alert('correct koodu');
             let newObj = [...localkooduData];
             newObj.forEach(function(item){
-                if (item.value == clickedKoodu) {
+                if (item.value === clickedKoodu) {
                     item.clickedcorrect = true;
                 }
             });
@@ -50,10 +51,12 @@ export default function GameScreen() {
         else {
             console.log('Incorrect Koodu !')
             // INCORRECT -----------
-
+            const audioElement = document.createElement("audio");
+            audioElement.setAttribute("src", chickencry2s);
+            audioElement.play();
             let newObj = [...localkooduData];
             newObj.forEach(function(item){
-                if (item.value == clickedKoodu) {
+                if (item.value === clickedKoodu) {
                     item.selectedkoodu = true;
                 }
             });

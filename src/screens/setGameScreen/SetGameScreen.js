@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SelectKoodu from './SelectKoodu';
 import BottomBar from '../../components/bottombar/BottomBar';
+import chickencry2s from '../../audios/chickencry2s.mp3';
 import kooduData from '../../data/kooduData';
 import './style.css';
 
@@ -15,9 +16,12 @@ export default function SetGameScreen() {
         let newObj = [...localkooduData];
         newObj.forEach(function(item) {
             if(item.id === id) {
+                const audioElement = document.createElement("audio");
+                audioElement.setAttribute("src",chickencry2s);
                 item.selectedkoodu = true;
                 item.iskozhi = true;
-                // console.log(item)
+                audioElement.play();
+                console.log("selected element");
             } else {
                 item.selectedkoodu = false;
                 item.iskozhi = false;

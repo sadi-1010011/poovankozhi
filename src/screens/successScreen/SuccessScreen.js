@@ -1,9 +1,13 @@
 import './style.css';
 import poovankozhi from '../../images/poovankozhi.png';
+import chickenwinner from '../../audios/chickenwinner.mp3';
 import { useNavigate } from 'react-router-dom';
 
 export default function SuccessScreen() {
     const navigate = useNavigate();
+    const audioElement = document.createElement("audio");
+    audioElement.setAttribute("src", chickenwinner);
+    audioElement.play();
     return (
         <div className="screen-container">
             <div className="winnerscreen-container">
